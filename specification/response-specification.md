@@ -14,7 +14,7 @@ Following URL parameters would need to be accepted on the requestor side.
 | -------------- | ------ | --------------------------------------------------------------------------------------------- |
 | fi             | String | Unique AA identifier. This will be encrypted using Base64/XOR along with resdate field        |
 | resdate        | String | format will be `ddmmyyyyhh24misss` UTC                                                        |
-| fi             | String | Encrypted parameters ([see below](response-specification.md#ecres-encrypted-path-parameters)) |
+| ecres          | String | Encrypted parameters ([see below](response-specification.md#ecres-encrypted-path-parameters)) |
 
 ## ecres (encrypted path parameters)
 
