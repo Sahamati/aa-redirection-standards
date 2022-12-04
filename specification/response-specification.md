@@ -20,6 +20,8 @@ Following URL parameters would need to be accepted on the requestor side.
 
 Below are the parameters that will be encrypted using AES256 encryption algorithm
 
+> The parameters must be in application/x-www-form-urlencoded format
+
 | **Parameter name** | **Parameter type** | **Parameter description**                                                                                    |
 | ------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------ |
 | txnid              | String             | UUID txnid ( To be sent back from the request )                                                              |
