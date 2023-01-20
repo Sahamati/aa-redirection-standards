@@ -40,4 +40,18 @@ The following errorcodes are returned by the AA to FIU when the user is redirect
 | 2              | Consent not available      | F                    | Y             | Consent request not found with the AA         |
 | 3              | Invalid request            | F                    | Y             | The redirection request has invalid data      |
 | 4              | User authentication failed | F                    | N             | User is not able to authenticate self         |
-| 5              | Consent in pending state   | F                    | N             | User neither approved or rejected the consent |
+| 6              | Session timeout            | F                    | N             | On login page, user doesnt act |
+| 7              | Account not discovered     | F                    | N             | FIP Id is passed but the accounts were not discovered in the FIP (error 404) and user cancels and goes back from AA page |
+| 8              | Account not discovered     | F                    | N             | FIP Id is passed but the accounts were not discovered due to error in FIP (other than 404) and user cancels and goes back from AA page |
+| 9              | Account not discovered     | F                    | N             | Multiple FIP Id were passed or FIP Id was not passed and no account discovered for the user in any FIP (error 404 or any other error) |
+| 10             | Account not linked         | F                    | N             | Accounts discovered and user does nothing (did not click to link accounts) and session timed-out |
+| 11             | Account not linked         | F                    | N             | Accounts discovered (did not click to link accounts) and user clicks cancelled |
+| 12             | Account link OTP not attempted | F                    | N             | Accounts discovered, user clicked on link CTA, but OTP not entered; and user cancels |
+| 13             | Account link OTP not attempted | F                    | N             | Accounts discovered, user clicked on link CTA, but OTP not entered; and user does nothing (timeout) |
+| 14             | Account link OTP authentication failed   | F                    | N             | All accounts link failed due to wrong OTP (wrong OTPs entered in single or multiple attempts) and finally cancels to go back to FIU |
+| 15             | Account link OTP authentication failed   | F                    | N             | All accounts link failed due to wrong OTP (single or multiple attempts) and does nothing (timeout) |
+| 16             | Account link failed   | F                    | N             | User enters valid OTP but all account link fails at FIP with some error |
+| 17             | Account link OTP authentication failed for some accounts   | F                    | N             | In case multiple FIP account linking, not all accounts linked successfully due to wrong OTP and user ends the AA journey by clicking cancel. |
+| 18             | Account link OTP authentication failed for some accounts   | F                    | N             | In case multiple FIP account linking, not all accounts linked successfully due to wrong OTP and user does nothing (timeout) |
+| 19             | Account link failed for some accounts   | F                    | N             | In case multiple FIP account linking, not all accounts linked successfully and user ends the AA journey |
+| 20             | Unknown error   | F                    | N             | In case AA is not able to send any valid error code |
