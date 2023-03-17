@@ -11,3 +11,4 @@ The AA Webview can be invoked by redirecting the FIU page to the Webview URL as 
 | [v1.0.0](https://sahamati.gitbook.io/aa-redirection-guidelines/v/1.0.0/) |              | Initial version                                                                       |
 | [v1.1.0](https://sahamati.gitbook.io/aa-redirection-guidelines/v/1.1.0/) | Dec 4, 2021  | Support for web redirection from a non-FIU participant - Loan Service Provider (LSP). |
 | [v1.2.0](https://sahamati.gitbook.io/aa-redirection-guidelines/v/1.2.0/) | Nov 26, 2022 | Allow requestors to provide a list of preferred FIPs for better customer experience.  |
+| [v1.2.1](https://sahamati.gitbook.io/aa-redirection-guidelines/v/1.2.1/) | Nov 26, 2022 | Add suppport for detailed error codes
