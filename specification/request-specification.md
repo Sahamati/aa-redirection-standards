@@ -30,7 +30,7 @@ Below are the required parameters that will be encrypted using AES256 encryption
 | srcref             | Array              | Array of consent handle id(s), as returned by AA server to the /Consent request api invoked by the FIU(s) on the AA prior to this redirection call.                                                                                                                                                                                        |
 | fipid              | Array              | Optional, can be blank. If FIU already has the information that citizen wants to discover accounts of one or more FIP(s) beforehand, then they can pass this info to AA. It saves user clicks and enhances journey experience                                                                                                              |
 | email           | String              | Optional, can be blank. If FIU wants to notifiy the consent creation and subsequent notifications to the citizen through email
-| PAN              | String              | Optional, can be blank. PAN of the citizen for discovery of certain FI categories like Mutual Funds, Stocks
+| pan             | String              | Optional, can be blank. PAN of the citizen for discovery of certain FI categories like Mutual Funds, Stocks
 
 ### userid
 
