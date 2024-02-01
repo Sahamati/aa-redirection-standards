@@ -32,6 +32,7 @@ Below are the required parameters that will be encrypted using AES256 encryption
 | email              | String             | Optional, can be blank. If FIU wants to notifiy the consent creation and subsequent notifications to the citizen through email                                                                                                                                                                                                             |
 | pan                | String             | Optional, can be blank. PAN of the citizen for discovery of certain FI categories like Mutual Funds, Stocks                                                                                                                                                                                                                                |
 | dob                | String             | Optional, can be blank. the citizen's birthdate in the format `YYYY-MM-DD`. This is necessary for discovering certain accounts, like insurance and other types where applicable.                                                                                                                                                           |
+| isoLanguageCode    | String | Optional, can be blank. ENUM [ en-IN, hi-IN, bn-IN, mr-IN, te-IN, ta-IN, gu-IN, ur-IN, kn-IN, or-IN, ml-IN, pa-IN, as-IN ]. The ENUM field would be expanded to accommodate new languages for any future requirements. AA Client can defaults to en-IN if a specific language is not supported. |
 
 ### userid
 
