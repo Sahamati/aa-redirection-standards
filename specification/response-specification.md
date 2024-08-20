@@ -57,3 +57,6 @@ The following errorcodes are returned by the AA to FIU when the user is redirect
 | 18             | Account link OTP authentication failed for some accounts   | F                    | N             | In case multiple FIP account linking, not all accounts linked successfully due to wrong OTP and user does nothing (timeout) |
 | 19             | Account link failed for some accounts   | F                    | N             | In case multiple FIP account linking, not all accounts linked successfully and user ends the AA journey |
 | 20             | Unknown error   | F                    | N             | In case AA is not able to send any valid error code |
+|21| Specific Account not present|F|N|Accounts value is passed but the accounts were not present and user cancels and goes back from AA page|
+|22|Specific Account not present|F|N|Accounts value is passed but the accounts were not present and user stays idle and session times out|
+|23|Accounts present but session timeout|F|N|Accounts value is passed and the account is present. But customer does not do anything and drops off in the consent screen|
